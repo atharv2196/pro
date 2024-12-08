@@ -1,7 +1,9 @@
 import streamlit as st
 
 def fuel_available():  
-    st.logo("logo.jpg")
+    left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image('logo.jpg')
     st.write("### Welcome to Atharv Fuel Station!")
     st.write("\n### Types of fuel available:")
     st.write("1. CNG : 84 rs/kg")
